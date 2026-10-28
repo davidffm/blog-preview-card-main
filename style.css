@@ -1,0 +1,29 @@
+body{/* mesmo coisa q ue o fundo da tela, mas para o corpo do documento */
+    background-color: hsl(47, 88%, 63%);
+    margin: 0;
+}
+main{
+    min-height: 100vh;/* 100% da altura da tela */
+    display: flex;/* flexbox é um modelo de layout que permite organizar elementos em uma direção específica (linha ou coluna) e controlar o espaçamento, alinhamento e distribuição desses elementos de forma eficiente. */
+    justify-content: center;/* centraliza horizontalmente */    
+    align-items: center;/* centraliza verticalmente */
+}
+
+.card{
+    border: 1px solid hsl(0, 27%, 6%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 384px;/* define a largura máxima do card */
+    width: 90%;/* define a largura do card como 90% da largura do elemento pai */
+    display: flex;/* flexbox é um modelo de layout que permite organizar elementos em uma direção específica (linha ou coluna) e controlar o espaçamento, alinhamento e distribuição desses elementos de forma eficiente. */
+    flex-direction: column;/* define a direção dos elementos filhos como coluna */
+    overflow: hidden;/* para que a borda arredondada funcione corretamente */
+}
+.card__conteudo{
+    padding: 24px;
+}
+.card__imagem{
+    width: 100%;/* define a largura da imagem como 100% da largura do elemento pai */
+    height: auto;
+}
