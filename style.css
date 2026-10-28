@@ -1,6 +1,8 @@
 body{/* mesmo coisa q ue o fundo da tela, mas para o corpo do documento */
     background-color: hsl(47, 88%, 63%);
     margin: 0;
+    font-family: 'Figtree';
+    font-weight: 500;
 }
 main{
     min-height: 100vh;/* 100% da altura da tela */
@@ -26,4 +28,18 @@ main{
 .card__imagem{
     width: 100%;/* define a largura da imagem como 100% da largura do elemento pai */
     height: auto;
+}
+@font-face{
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+h1{
+    font-weight:800;
+    
+}
+.card__categoria{
+    background-color:  hsl(47, 88%, 63%);
+    padding: 4px 8px;
+    border-radius:4px;
+    font-weight: 800;
 }
