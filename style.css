@@ -14,32 +14,78 @@ main{
 .card{
     border: 1px solid hsl(0, 27%, 6%);
     background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    max-width: 384px;/* define a largura máxima do card */
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+    max-width: 355px;/* define a largura máxima do card */
     width: 90%;/* define a largura do card como 90% da largura do elemento pai */
     display: flex;/* flexbox é um modelo de layout que permite organizar elementos em uma direção específica (linha ou coluna) e controlar o espaçamento, alinhamento e distribuição desses elementos de forma eficiente. */
     flex-direction: column;/* define a direção dos elementos filhos como coluna */
     overflow: hidden;/* para que a borda arredondada funcione corretamente */
 }
-.card__conteudo{
-    padding: 24px;
-}
+
 .card__imagem{
-    width: 100%;/* define a largura da imagem como 100% da largura do elemento pai */
-    height: auto;
+    padding: 20px 20px  10px;/* define o preenchimento do elemento */
+    border-radius: 30px;/* define a borda superior esquerda do elemento como arredondada */
+  
 }
+.card__conteudo{
+    padding: 18px 18px 16px;
+}
+
 @font-face{
     font-family: 'Figtree';
     src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
 }
 h1{
+    font-size: 1.5rem;/* define o tamanho da fonte como 1.5 vezes o tamanho da fonte do elemento pai */
+    width: 100%;/* define a largura do elemento como 100% da largura do elemento pai */
+    display: block;/* define o elemento como bloco, ocupando toda a largura disponível */
+    margin:20px 0px 8px;/* define a margem superior e inferior do elemento como 0 e a margem esquerda e direita como 8px */
+    font-size: 1.5rem;/* define o tamanho da fonte como 2 vezes o tamanho da fonte do elemento pai */
     font-weight:800;
-    
+    line-height:1.1;/* define a altura da linha como 1.1 vezes o tamanho da fonte */
 }
+
 .card__categoria{
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 5px;
     background-color:  hsl(47, 88%, 63%);
-    padding: 4px 8px;
+    padding:5px 9px 5px;
     border-radius:4px;
     font-weight: 800;
+}
+.card__descricao{
+    font-size: 16px;
+    line-height: 1.5;/* define a altura da linha como 1.5 vezes o tamanho da fonte */
+    color: hsl(0, 0%, 42%);
+    margin:20px 0 20px;/* define a margem superior do elemento */
+}
+
+.card__autor{
+    font-weight:100;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+}
+   
+.card__autor img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;/* define a borda do elemento como arredondada */
+}
+
+.card__autor span{
+    font-weight: 800;
+    font-size:14px;
+    
+}
+
+.card__data{
+    color: hsl(0, 0%, 10%);
+    display: block;/* define o elemento como bloco, ocupando toda a largura disponível */
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 8px;/* define a margem do elemento */
 }
